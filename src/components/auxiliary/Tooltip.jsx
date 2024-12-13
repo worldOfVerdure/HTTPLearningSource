@@ -11,7 +11,7 @@ export default function Tooltip ( {children, tooltipText} ) {
 const TooltipContainer = styled.div`
   border-bottom: 1px dotted black;
   color:rgb(1, 114, 219);
-  display: inline-block;
+  display: inline-flex;
   position: relative;
 
   &:hover span {
@@ -21,25 +21,25 @@ const TooltipContainer = styled.div`
   & span {
     background-color:rgb(224, 224, 224);
     border-radius: .6rem;
+    font-size: clamp(1.2rem, calc(1rem + 1vw), 2.2rem);
     left: 50%;
-    margin-left: -6rem;
     padding: .5rem;
     position: absolute;
     text-align: center;
     top: 115%;
-    // transform: translateX(-50%);
+    transform: translateX(-50%);
     visibility: hidden;
-    width: 420px;
+    width: 20rem;
   }
 
   & span::after {
+    border-color: transparent transparent rgb(238, 238, 238)  transparent;
+    border-style: solid;
+    border-width: .5rem;
     bottom: 100%;
     content: " ";
-    position: absolute;
     left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent rgb(238, 238, 238)  transparent;
+    position: absolute;
+    transform: translateX(-50%);
   }
 `;
