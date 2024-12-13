@@ -83,7 +83,7 @@ Error generating stack: `+o.message+`
   & span {
     background-color:rgb(224, 224, 224);
     border-radius: .6rem;
-    font-size: clamp(1.2rem, calc(1rem + 1vw), 2.2rem);
+    font-size: clamp(1.3rem, calc(1rem + 1vw), 2.4rem);
     left: 50%;
     padding: .5rem;
     position: absolute;
@@ -95,9 +95,9 @@ Error generating stack: `+o.message+`
   }
 
   & span::after {
-    border-color: transparent transparent rgb(238, 238, 238)  transparent;
+    border-color:  transparent transparent rgb(238, 238, 238)  transparent;
     border-style: solid;
-    border-width: .5rem;
+    border-width: clamp(.5rem, calc(.2rem + 1vw), 1rem);
     bottom: 100%;
     content: " ";
     left: 50%;
