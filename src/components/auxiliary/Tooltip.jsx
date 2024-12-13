@@ -8,10 +8,10 @@ export default function Tooltip ( {children, tooltipText} ) {
   );
 }
 
-const TooltipContainer = styled.div`
+const TooltipContainer = styled.span`
   border-bottom: 1px dotted black;
   color:rgb(1, 114, 219);
-  display: inline-flex;
+  display: inline-block;
   position: relative;
 
   &:hover span {
