@@ -1,3 +1,4 @@
+import MEDIA_SIZES from "./mediaSizes.js";
 import { styled } from "styled-components";
 
 export default function Tooltip ( {children, tooltipText} ) {
@@ -11,7 +12,7 @@ export default function Tooltip ( {children, tooltipText} ) {
 const TooltipContainer = styled.span`
   border-bottom: 1px dotted black;
   color:rgb(1, 114, 219);
-  display: inline-block;
+  display: inline;
   position: relative;
 
   &:hover span {
@@ -33,7 +34,7 @@ const TooltipContainer = styled.span`
   }
 
   & span::after {
-    border-color:  transparent transparent rgb(238, 238, 238)  transparent;
+    border-color:  transparent transparent rgb(224, 224, 224)  transparent;
     border-style: solid;
     border-width: clamp(.5rem, calc(.2rem + 1vw), 1rem);
     bottom: 100%;
@@ -41,5 +42,17 @@ const TooltipContainer = styled.span`
     left: 50%;
     position: absolute;
     transform: translateX(-50%);
+  }
+
+  @media (${MEDIA_SIZES.tablet} < width < ${MEDIA_SIZES.laptop}) {
+    & span {
+      width: 38rem;
+    }
+  }
+
+  @media (min-width: ${MEDIA_SIZES.laptopL}) {
+    & span {
+      width: 60rem;
+    }  
   }
 `;
