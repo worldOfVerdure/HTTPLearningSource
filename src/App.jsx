@@ -1,9 +1,10 @@
 import { createGlobalStyle } from "styled-components";
+import HTTPObjective from "./components/HTTPObjective/HTTPObjective.jsx";
 
 const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
-  }  
+  }
 
   body {
     align-items: center;
@@ -16,11 +17,19 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
   }
 
-  h1 {
+  h1, h2 {
     font-family: "Fira Mono", monospace;
+    margin: 2rem 0;
+  }
+
+  h1 {
     font-size: clamp(2rem, calc(1rem + 2.2vw), 6rem);
     font-weight: 700;
-    margin: 2rem 0 0 0;
+  }
+
+  h2 {
+    font-size: clamp(1.8rem, calc(1rem + 2vw), 4.5rem);
+    font-weight: 500;
   }
 
   html {
@@ -32,6 +41,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
+      <HTTPObjective />
     </>
   );
 }

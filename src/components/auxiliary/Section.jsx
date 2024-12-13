@@ -1,12 +1,12 @@
 import { styled } from "styled-components";
 
-export default function Section() {
+export default function Section( {children} ) {
   return (
-    <Section></Section>
+    <StyledSection>{children}</StyledSection>
   );
 }
 
-const Section = styled.section`
+const StyledSection = styled.section`
   align-items: center;
   display: flex;
   flex-direction: column;
