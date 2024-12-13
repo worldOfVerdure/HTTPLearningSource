@@ -73,7 +73,7 @@ Error generating stack: `+o.message+`
   that is being exchanged. The set of rules that defines a format is called a protocol.`};function Vh({children:i,tooltipText:a}){return Oe.jsxs(Wh,{children:[" ",i,Oe.jsx("span",{children:a})]})}const Wh=Xr.div`
   border-bottom: 1px dotted black;
   color:rgb(1, 114, 219);
-  display: inline-block;
+  display: inline-flex;
   position: relative;
 
   &:hover span {
@@ -83,26 +83,26 @@ Error generating stack: `+o.message+`
   & span {
     background-color:rgb(224, 224, 224);
     border-radius: .6rem;
+    font-size: clamp(1.2rem, calc(1rem + 1vw), 2.2rem);
     left: 50%;
-    margin-left: -6rem;
     padding: .5rem;
     position: absolute;
     text-align: center;
     top: 115%;
-    // transform: translateX(-50%);
+    transform: translateX(-50%);
     visibility: hidden;
-    width: 420px;
+    width: 20rem;
   }
 
   & span::after {
+    border-color: transparent transparent rgb(238, 238, 238)  transparent;
+    border-style: solid;
+    border-width: .5rem;
     bottom: 100%;
     content: " ";
-    position: absolute;
     left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent rgb(238, 238, 238)  transparent;
+    position: absolute;
+    transform: translateX(-50%);
   }
 `,Qh=[{sourceURL:"https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#:~:text=to%20see%20ads%3F-,An%20overview%20of%20HTTP,-HTTP%20is%20a",quote:Oe.jsxs("p",{children:['"HTTP is a ',Oe.jsx(Vh,{tooltipText:Hh.protocol,children:"protocol"}),' for fetching resources such as HTML documents. It is the foundation of any data exchange on the Web and it is a client-server protocol, which means requests are initiated by the recipient, usually the Web browser. A complete document is typically constructed from resources such as text content, layout instructions, images, videos, scripts, and more."']}),sourceTitle:"MDN"}];function Kh({children:i}){return Oe.jsx(Gh,{children:i})}const Gh=Xr.section`
   align-items: center;
