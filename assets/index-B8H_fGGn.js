@@ -70,10 +70,10 @@ Error generating stack: `+o.message+`
   }
 `,Hh={protocol:`A protocol is a system of rules that define how data is exchanged within or between
   computers. Communications between devices require that the devices agree on the format of the data
-  that is being exchanged. The set of rules that defines a format is called a protocol.`};function Vh({children:i,tooltipText:a}){return Oe.jsxs(Wh,{children:[" ",i,Oe.jsx("span",{children:a})]})}const Wh=Xr.div`
+  that is being exchanged. The set of rules that defines a format is called a protocol.`};function Vh({children:i,tooltipText:a}){return Oe.jsxs(Wh,{children:[" ",i,Oe.jsx("span",{children:a})]})}const Wh=Xr.span`
   border-bottom: 1px dotted black;
   color:rgb(1, 114, 219);
-  display: inline-flex;
+  display: inline-block;
   position: relative;
 
   &:hover span {
