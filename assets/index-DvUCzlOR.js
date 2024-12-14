@@ -58,7 +58,7 @@ Error generating stack: `+o.message+`
     width: 55%;
   }
 `,Bh=Xr.blockquote`
-  background-color:rgb(189, 189, 189);
+  background-color:rgb(241, 241, 241);
   border: .5rem inset rgb(167, 167, 167);
   border-radius: 2rem;
   box-sizing: content-box;
