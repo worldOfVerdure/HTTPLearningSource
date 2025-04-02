@@ -3,7 +3,8 @@ import { styled } from "styled-components";
 
 export default function Tooltip ( {children, tooltipText} ) {
   return (
-    <TooltipContainer> {children}
+    <TooltipContainer> 
+      {children}
       <span>{tooltipText}</span>
     </TooltipContainer>
   );
