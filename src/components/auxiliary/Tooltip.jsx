@@ -13,7 +13,7 @@ export default function Tooltip ( {children, tooltipText} ) {
 const TooltipContainer = styled.span`
   border-bottom: 1px dotted black;
   color:rgb(1, 114, 219);
-  display: inline;
+  display: inline-block;
   position: relative;
 
   &:hover span {
@@ -23,6 +23,7 @@ const TooltipContainer = styled.span`
   & span {
     background-color:rgb(224, 224, 224);
     border-radius: .6rem;
+    display: inline-block;
     font-size: clamp(1.3rem, calc(1rem + 1vw), 2.4rem);
     left: 50%;
     padding: .5rem;
