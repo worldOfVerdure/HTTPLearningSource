@@ -2,6 +2,16 @@ import { createGlobalStyle } from "styled-components";
 import FirstForm from "./components/MDNModules/FirstForm.jsx";
 import HTTPObjective from "./components/HTTPObjective/HTTPObjective.jsx";
 
+export default function App() {
+  return (
+    <>
+      <GlobalStyle />
+      <HTTPObjective />
+      <FirstForm />
+    </>
+  );
+}
+
 const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
@@ -24,12 +34,12 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    font-size: clamp(2rem, calc(1rem + 2.2vw), 6rem);
+    font-size: clamp(2rem, calc(1rem + 2.2vw), 4rem);
     font-weight: 700;
   }
 
   h2 {
-    font-size: clamp(1.8rem, calc(1rem + 2vw), 4.5rem);
+    font-size: clamp(1.8rem, calc(1rem + 2vw), 3.5rem);
     font-weight: 500;
   }
 
@@ -37,15 +47,3 @@ const GlobalStyle = createGlobalStyle`
     font-size: 62.5%;
   }
 `;
-
-function App() {
-  return (
-    <>
-      <GlobalStyle />
-      <HTTPObjective />
-      <FirstForm />
-    </>
-  );
-}
-
-export default App;

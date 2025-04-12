@@ -31,11 +31,6 @@ const QuoteContainer = styled.div`
     font-size: clamp(1.3rem, calc(1rem + 1vw), 2.4rem);
   }
 
-  & p {
-    margin: 0;
-    text-align: center;
-  }
-
   @media (min-width: ${MEDIA_SIZES.laptopL}) {
     width: 55%;
   }
@@ -47,9 +42,4 @@ const StyledBlockquote = styled.blockquote`
   border-radius: 2rem;
   box-sizing: content-box;
   padding: 1rem 2.5rem;
-
-  & p {
-    font-family: "Ovo", serif;
-    font-size: clamp(1.6rem, calc(1.2rem + 1vw), 2.5rem);
-  }
 `;
